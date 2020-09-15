@@ -1,0 +1,121 @@
+<html>
+    <head><title>Animation css</title>
+    <style>
+        .animation{
+            height:120px;
+            width:120px;
+            border-radius:60px;
+            background-color: dodgerblue;
+            position: relative;
+            animation:example 3s infinite alternate-reverse;
+            transform:translate(1%,1%);
+         }
+        @keyframes example{
+            0%{background-color: firebrick; left:0px; top:0px;}
+            25%{background-color: greenyellow; left:950px; top:0px;}
+            50%{background-color: green; left:950px; top:170px;}
+            75%{background-color: darkslateblue; left:0px; top:170px;}
+            100%{background-color: firebrick; left:0px; top:0px;}
+        }
+        .animation:hover{
+            animation-play-state: paused;
+        }
+        body{
+            background-color: tomato;
+            transition: 2s;
+        }
+        body:hover{
+            background-color: royalblue;
+        }
+        .box{
+            width:1073px;
+            height:292px;
+            transition: 2s;
+            background-color: darkcyan;
+            transform:translate(2.8%,11%);
+        }
+        .box:hover{
+            background-color: sienna;
+        }
+        .box1{
+            width:1135px;
+            height:356px;
+            transition: 2s;
+            background-color: yellow;
+            transform:translate(2.8%,9%);
+        }
+        .box1:hover{
+            background-color: teal;
+        }
+        .box2{
+            width:1201px;
+            height:420px;
+            transition: 2s;
+            background-color: green;
+            transform:translate(2.8%,8%);
+        }
+        .box2:hover{
+            background-color: crimson;
+        }
+        .box3{
+            width:1270px;
+            height:488px;
+            background-color: darkslategrey;
+            transition: 2s;
+            transform:translate(2.8%,7%);
+        }
+        .box3:hover{
+            background-color: lightseagreen;
+        }
+        .box4{
+            width:1343px;
+            height:555px;
+            background-color: red;
+            transition: 2s;
+            transform:translate(2.5%,6.5%);
+        }
+        .box4:hover{
+            background-color: olive;
+        }
+        .box5{
+            width:1410px;
+            height:625px;
+            background-color: rgb(131, 81, 81);
+            transition: 2s;
+            transform:translate(2.3%,5.5%);
+        }
+        .box5:hover{
+            background-color: seagreen;
+        }
+        .box6{
+            width:1476px;
+            height:690px;
+            transition: 2s;
+            background-color: green;
+            transform:translate(1.5%,3.2%);
+        }
+        .box6:hover{
+            background-color: yellowgreen;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div class="box6">
+        <div class="box5">
+        <div class="box4">
+        <div class="box3">
+        <div class="box2"> 
+        <div class="box1">
+        <div class="box">
+        <div class="animation"></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </body>
+    </body>
+</html>
